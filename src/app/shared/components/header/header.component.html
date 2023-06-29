@@ -1,0 +1,149 @@
+<div class="header-container">
+
+        <div class="header-social-bar">
+            <i><fa-icon [icon]="facebookIcon"></fa-icon></i>
+            <i><fa-icon [icon]="instagramIcon"></fa-icon></i>
+            <i><fa-icon [icon]="twitterIcon"></fa-icon></i>
+        </div>
+
+
+
+        <div class="header-cart-bar">
+            <i><fa-icon id="cart" (click)="ShowCart()" [icon]="cartIcon"></fa-icon></i>
+            <i><fa-icon id="user" (click)="ShowUser()" [icon]="userIcon"></fa-icon></i>
+            <i><fa-icon [icon]="heartIcon" [routerLink]="['/wishlist']" ></fa-icon></i>
+        </div>
+
+    
+
+        <div class="header-menu-bar">
+
+
+            <div class="header-logo" [routerLink]="['/']">
+                <fa-icon [icon]="coffeIcon"></fa-icon>
+                <h3>Coffe Shop</h3>
+            </div>
+    
+    
+            <div class="menu-bar-content">
+                <ul>
+
+
+                    <li>
+                        <a [routerLink]="['/store']" id="ShowBoxMenu" [routerLinkActive]="['activeLink']" [routerLinkActiveOptions]="{exact: true}">Coffee</a>
+    
+                        <div class="dropdown" id="drop">
+                            <div class="dropdown-content">
+                                <a [routerLink]="['/store/coffes']">Ground Roasted Coffee</a>
+                                <a [routerLink]="['/store/category/capsules']">Capsules</a>
+                                <a [routerLink]="['/store/category/roasted']">Roasted</a>
+                            </div>
+                        </div>
+    
+                    </li>
+    
+                    <li><a [routerLink]="['/about']"id="Menu" [routerLinkActive]="['activeLink']" [routerLinkActiveOptions]="{exact: true}">About</a></li>
+                    <li><a  id="Menu" [routerLink]="['/contact']"id="Menu" [routerLinkActive]="['activeLink']" [routerLinkActiveOptions]="{exact: true}">Contact</a></li>
+                    <li><a  id="Menu" [routerLink]="['/blog']"id="Menu" [routerLinkActive]="['activeLink']" [routerLinkActiveOptions]="{exact: true}">Blog</a></li>
+
+
+                </ul>
+            </div>
+    
+            <div class="header-search">
+
+                <input type="text" name="" placeholder="Search" id="SearchBar">
+    
+                    <div class="header-search-icon">
+                        <i><fa-icon [icon]="searchIcon"></fa-icon></i>
+                    </div>
+            </div>
+    
+        </div>
+
+
+    </div>
+
+
+<div class="side-bar-cart">
+    <div class="container-cart-user">
+        <div class="login-box">
+
+
+        <h1>Login</h1>
+            <div class="close-box">
+                <span (click)="CloseSideBar()"><fa-icon [icon]="closeIcon"></fa-icon> Close </span>
+            </div>
+        </div>
+
+
+        <div class="cart-empty">
+            <i><fa-icon [icon]="cartIcon"></fa-icon></i>
+
+            <h3>Your cart is Empty </h3>
+
+            <button class="comeback-button" (click)="CloseSideBar()">Back to Store</button>
+        </div>
+
+        <div class="cart-itens">
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="side-bar-user">
+
+    <div class="container-user-login">
+
+        <div class="login-logout">
+            <h1>Login</h1>
+
+            <div class="close">
+                <span (click)="CloseSideBar()"><fa-icon [icon]="closeIcon"></fa-icon>Close</span>
+
+            </div>
+        </div>
+
+        <div class="login-box-container">
+
+            <label for="username">Nome de usuário ou e-mail</label>
+
+            <input type="text">
+
+            <label for="password">Senha</label>
+
+            <input type="text">
+
+            <button>Acess Account</button>
+
+            <div class="remember-or-forget-pass">
+                <div class="remember-box">
+                    <input type="checkbox">
+                    <span>Remember</span>
+                </div>
+
+                <a [routerLink]="['']">Forget password ?</a>
+            </div>
+
+        </div>
+
+        <div class="new-account">
+                <p>Still dont Have a account ?</p>
+
+                <button [routerLink]="['']">Create Account </button>
+        
+                <button class="comeback-button" (click)="CloseSideBar()">Back to Store</button>
+
+    </div>
+
+
+    </div>
+</div>
+
+<div class="header-to-top">
+    <button (click)="TopPage()"><fa-icon [icon]="topIcon"></fa-icon></button>
+</div>
+
+<div class="sidebar"></div>

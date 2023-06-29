@@ -1,0 +1,43 @@
+.home-component {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(120deg, #f5a068 0%, transparent 40%, #FCEADE 100%);
+    height: 100vh;
+    width: 100vw;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1);
+
+    
+    .home-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-title {
+        margin: 0 auto;
+        font-size: 5rem;
+        background-image: linear-gradient(90deg, #8f6969 40%, rgb(200, 125, 76), rgb(83, 54, 54) 60%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+
+    .home-img-box {
+        margin: 0 auto 10% auto;
+        height: 100%;
+        width: 50%;
+        background: url('Img/CookiesCremeHome.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+}

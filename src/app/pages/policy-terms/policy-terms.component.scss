@@ -1,0 +1,27 @@
+.policy-terms-component {
+    margin: 5% 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background: #eee;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 25px;
+
+    width: 45%;
+
+    h1 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.4em;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+
+    p {
+        padding: 10px;
+    }
+
+    strong {
+        color: #313030;
+    }
+}

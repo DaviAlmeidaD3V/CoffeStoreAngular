@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth !important;
+    // height: 100%;
+    overflow-x: hidden;
+    background: #272424;
+}
+
+$BaseColor: #161414;
+$Border: 1px solid #000;
+$Caramel: #c49134;
+$BorderRadius: 0.25rem !default;
+$FontWeigth: 100;
+$FontMediun: 400;
+$FontBold: 900;
+$SizeText: 1rem;
+
+$Transition: all 400ms ease-in-out;
+$Opacity: 0;
+$NoneHeigth: 0;
+$NoneWidth: 0;
+
+app-root{
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+app-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+app-footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+app-home, app-about, app-contact, app-blog , app-policy-terms, app-wishlist {
+    margin-top: 20vh;
+    background: #Fff;
+}
+
+::-webkit-scrollbar-track {
+    border: none;
+    padding: 2px 0;
+    background-color: #404040;
+  }
+  
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #cc8a5a;
+}

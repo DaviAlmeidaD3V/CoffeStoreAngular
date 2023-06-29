@@ -1,0 +1,103 @@
+.register-component {
+    height: 115px;
+    width: 100vw;
+    opacity: 1;
+    position: fixed;
+    bottom: -20%;
+    transition: 1000ms;
+    display: flex;
+    justify-content: space-around;
+
+    
+    .register-close-button  {
+        height: 35px;
+        width: 35px;
+        border: none;
+        background: none;
+        position: absolute;
+        right: 3%;
+        top: 10%;
+        font-size: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        fa-icon {
+            color: #Fff;
+            font-size: 15px;
+        }
+    }
+    .register-close-button:hover {
+        transition: 0.6s;
+        background: #FFA370;
+    }
+
+}
+
+.register-component.on {
+    height: 115px;
+    width: 100vw;
+    opacity: 1;
+    transition: 400ms;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 80%) !important;
+    z-index: 3;
+
+    .register-close-button  {
+        height: 35px;
+        width: 35px;
+        border: none;
+        background: none;
+        position: absolute;
+        right: 3%;
+        top: 10%;
+        font-size: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        fa-icon {
+            color: #Fff;
+            font-size: 15px;
+        }
+    }
+    .register-close-button:hover {
+        transition: 0.6s;
+        background: #FFA370;
+    }  
+}
+
+.register-logo-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #cc8a5a;
+    gap: 0.5rem;
+
+    .register-logo {
+        font-size: 45px;
+        color: #cc8a5a;
+    }
+}
+
+.register-user-login-logout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1% 0;
+    font-size: 12px;
+
+    a {
+        padding: 2px 10px;
+        border-radius: 15px;
+        background: #373434;
+        color: #cc8a5a;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+}
