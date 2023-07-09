@@ -30,6 +30,15 @@ export class CookiesComponent implements OnInit, AfterViewInit {
           })
         }
       })
+
+      window.onload = function() {
+        if (typeof window.localStorage != "undefined" && !localStorage.getItem('visited')) {
+          document.querySelector('.cookie-component')?.classList.add('show-cookies')
+        }
+        else {
+          document.querySelector('.cookie-component')?.classList.remove('show-cookies')
+        }
+      }
   
   }
   

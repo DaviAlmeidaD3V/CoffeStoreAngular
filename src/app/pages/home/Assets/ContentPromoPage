@@ -1,0 +1,25 @@
+<div class="home-promo-section">
+    <div class="home-info-product">
+
+        <h1>2023</h1>
+
+        <h3>and you still dont buy our coffes</h3>
+
+        <div class="home-clock-product">
+            <span class="datetime"></span>
+        </div>
+
+    <div class="home-how-we-do-that">
+        <h5>Only the Highest Quality of our coffe Drinks </h5>
+
+        <h6>How We do that <fa-icon [icon]="arrowIcon"></fa-icon></h6>
+    </div>
+
+    </div>
+
+    <div class="home-img-box"></div>
+
+    <div class="home-price-product">
+
+    </div>
+</div>

@@ -87,6 +87,7 @@
               "zone.js",
               "zone.js/testing"
             ],
+            "stylePreprocessorOptions": {"includePaths": ["node_modules/@syncfusion"]},
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [

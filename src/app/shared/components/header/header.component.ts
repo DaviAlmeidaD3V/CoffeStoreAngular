@@ -1,5 +1,5 @@
 import { Component, OnInit, } from '@angular/core';
-import { faAngleUp, faCartShopping, faClose, faCoffee, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faAngleUp, faCartShopping, faClose, faCoffee, faCookie, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faHeart, faUser} from '@fortawesome/free-solid-svg-icons';
 import * as $ from 'jquery';
@@ -9,7 +9,8 @@ import { HostListener } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  styles:  [`.router-link-active { color: #ffa370; }`]
 })
 
 
@@ -85,11 +86,15 @@ export class HeaderComponent implements OnInit {
 ngAfterViewInit(){}
 
   ngOnInit() {
-    $('#ShowBoxMenu').hover(function(){
-    $('#drop').toggleClass('dropdown-open');
+    $('#menu-bar-info-on').hover(function(){
+    $('#menu-bar-info-drop').toggleClass('dropdown-open');
     })
     $('.dropdown-content').hover(function () {
-      $('#drop').toggleClass('dropdown-open');
+      $('#menu-bar-info-drop').toggleClass('dropdown-open');
+    })
+
+    document.querySelector('.cookie-box')?.addEventListener('click', () => {
+      document.querySelector('.cookie-component')?.classList.add('show-cookies');
     })
   }
 
@@ -103,5 +108,6 @@ ngAfterViewInit(){}
   cartIcon = faCartShopping
   topIcon = faAngleUp
   closeIcon =  faClose
+  cookieIcon = faCookie
   
 }

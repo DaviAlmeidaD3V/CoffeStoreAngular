@@ -5,9 +5,9 @@
     margin: 0 auto;
     flex-direction: column;
     text-align: center;
-    background: #fff;
 
     h3 {
+        color: #cc8a5a;
         font-size: 70px;
     }
 
@@ -26,6 +26,11 @@
     align-items: center;
     padding: 45px;
 
+    .info-user {
+        padding: 30px;
+        border-radius: 15px;
+    }
+
     .phone-email {
         display: flex;
         justify-content: space-between;
@@ -37,13 +42,12 @@
         border: none;
         text-align: center;
         padding: 12px 20px;;
-        height: 20px;
+        height: 40px;
         width: 160px;
-        transition: 300ms;
+        border: 1px solid #b3b3b3;
     }
     input:focus {
-        outline: 1px solid rgba(194, 192, 192, 0.9);
-        border-radius: 5px;
+        outline: none;
     }
 
     button {
@@ -67,9 +71,10 @@
             resize: none;
             text-align: center;
             line-height: 55px;
+            border: 1px solid #b3b3b3
         }
         textarea:focus {
-            outline: 1px solid rgba(194, 192, 192, 0.9);
+            outline: none;
             border-radius: 5px;
         }
     }
@@ -77,6 +82,10 @@
 }
 
 .contact-info {
+    padding: 35px;
+    border-radius: 15px;
+
+
     h3 {
         font-size: 20px;
     }

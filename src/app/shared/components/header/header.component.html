@@ -30,9 +30,9 @@
 
 
                     <li>
-                        <a [routerLink]="['/store']" id="ShowBoxMenu" [routerLinkActive]="['activeLink']" [routerLinkActiveOptions]="{exact: true}">Coffee</a>
+                        <a [routerLink]="['/store']" id="menu-bar-info-on" class="active-drop" class="menu-bar-links" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact: true}">Coffee</a>
     
-                        <div class="dropdown" id="drop">
+                        <div class="dropdown" id="menu-bar-info-drop">
                             <div class="dropdown-content">
                                 <a [routerLink]="['/store/coffes']">Ground Roasted Coffee</a>
                                 <a [routerLink]="['/store/category/capsules']">Capsules</a>
@@ -42,9 +42,9 @@
     
                     </li>
     
-                    <li><a [routerLink]="['/about']"id="Menu" [routerLinkActive]="['activeLink']" [routerLinkActiveOptions]="{exact: true}">About</a></li>
-                    <li><a  id="Menu" [routerLink]="['/contact']"id="Menu" [routerLinkActive]="['activeLink']" [routerLinkActiveOptions]="{exact: true}">Contact</a></li>
-                    <li><a  id="Menu" [routerLink]="['/blog']"id="Menu" [routerLinkActive]="['activeLink']" [routerLinkActiveOptions]="{exact: true}">Blog</a></li>
+                    <li><a [routerLink]="['/about']"id="Menu" class="menu-bar-links" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact: true}">About</a></li>
+                    <li><a  id="Menu" [routerLink]="['/contact']"id="Menu"  class="menu-bar-links"[routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact: true}">Contact</a></li>
+                    <li><a  id="Menu" [routerLink]="['/blog']"id="Menu"  class="menu-bar-links" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact: true}">Blog</a></li>
 
 
                 </ul>
@@ -147,3 +147,5 @@
 </div>
 
 <div class="sidebar"></div>
+
+<div class="cookie-box"><fa-icon [icon]="cookieIcon"></fa-icon></div>

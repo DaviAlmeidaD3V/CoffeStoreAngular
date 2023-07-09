@@ -10,9 +10,14 @@ import { faGear, faIndustry, faUsers } from '@fortawesome/free-solid-svg-icons';
 export class FooterComponent implements OnInit{
 
   constructor(){}
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    document.querySelector('.cookie-box')?.addEventListener('click', () => {
+      document.querySelector('.cookie-component')?.classList.add('show-cookies');
+    })
+  }
 
   gearIcon = faGear
   employeesIcon = faUsers
   industry = faIndustry
+
 }

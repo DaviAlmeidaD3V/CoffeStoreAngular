@@ -19,4 +19,10 @@ export class RegisterBarComponent implements OnInit{
     document.querySelector('.register-component')?.classList.remove('on');
   }
 
+  LoadRegisterBar() {
+    document.querySelector('.register-component')?.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.register-component')?.classList.add('on')
+    })
+  }
+
 }

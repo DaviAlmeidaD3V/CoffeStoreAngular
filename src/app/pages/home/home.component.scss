@@ -1,43 +1,220 @@
-.home-component {
-    margin: 0 auto;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(120deg, #f5a068 0%, transparent 40%, #FCEADE 100%);
+.home-landing-page-section {
     height: 100vh;
     width: 100vw;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1);
+    display: flex;
+    flex-direction: row;
 
-    
-    .home-content {
+    .home-apresentation {
+        width: 70%;
         height: 100%;
-        width: 100%;
+    }
+
+    .home-client-avaliations-bar {
+        width: 30%;
+        height: 100%;
+    }
+}
+
+.home-apresentation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+    .home-title-box {
+        padding: 20px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-    }
-
-    .home-title {
+        width: 100%;
         margin: 0 auto;
-        font-size: 5rem;
-        background-image: linear-gradient(90deg, #8f6969 40%, rgb(200, 125, 76), rgb(83, 54, 54) 60%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
     }
 
-    .home-img-box {
-        margin: 0 auto 10% auto;
-        height: 100%;
-        width: 50%;
-        background: url('Img/CookiesCremeHome.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
+    .home-text-box {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            padding: 20px;
+            text-align: start;
+            width: 50%;
+        }
     }
+
+    h1 {
+        font-size: 3rem;
+        color: #252424;
+        text-align: start;
+        width: 40%;
+        font-weight: 400;
+
+        strong {
+            text-transform: uppercase;
+            color: #FFA370;
+            font-weight: 900;
+        }
+
+        span {
+            color: #6c6a6b;;
+            font-weight: 400;
+        }
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    button {
+        border: none;
+        padding: 5px;
+        text-align: center;
+        height: 60px;
+        width: 180px;
+        background: #FFA370;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 800;
+    }
+
+    button:hover {
+        opacity: 0.7;
+        transform: 300ms;
+    }
+
+    .home-sort-phrase {
+        margin: 5% auto;
+        width: 80%;
+        font-weight: 300;
+        color: #6c6a6b;
     
+        span {
+            padding: 0 20px;
+            font-size: 2rem;
+            color: #FFA370;
+        }
+    }
+
+}
+
+.home-client-avaliations-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1%;
+
+    h1 {
+        color: #d89657;
+    }
+
+}
+
+.home-avaliations{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 10%;
+}
+
+.home-avaliations {
+    background: url('https://images.unsplash.com/photo-1593621443450-e6f6578fd7a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwZHJpbmtpbmclMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-avaliations:nth-child(2) {
+    background: url('https://c.stocksy.com/a/rbU500/z9/1309307.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-avaliations:nth-child(3) {
+    background: url('https://images.unsplash.com/photo-1536914561643-9e3a7a8d063d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW4lMjB3aXRoJTIwY29mZmVlfGVufDB8fDB8fHww&w=1000&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.home-promo-section {
+    display: none;
+}
+
+.home-info-product {
+    height: 600px;
+    width: 30%;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 5rem;
+        color: #252424;
+        text-align: center;
+        width: 100%;
+    }
+
+    h3 {
+        color: #252424;
+        text-align: center;
+        width: 80%;
+        line-height: 35px;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 35px;
+    }
+}
+
+.home-clock-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 325px;
+    font-size: 3rem;
+    color: #252424;
+    background: #000;
+    margin: 3% 0;
+    border-radius: 25px;
+}
+
+.home-how-we-do-that {
+    width: 90%;
+    font-size: 30px;
+    margin: 0 auto;
+    color: #252424;
+
+    h6 {
+        text-align: end;
+        font-size: 13px;
+    }
+}
+
+.home-img-box {
+    margin: 0 auto 10% auto;
+    height: 100%;
+    width: 40%;
+    background: url('Img/CookiesCremeHome.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.home-price-product {
+    height: 600px;
+    width: 30%;
+    position: relative;
+    top: 10%;
 }

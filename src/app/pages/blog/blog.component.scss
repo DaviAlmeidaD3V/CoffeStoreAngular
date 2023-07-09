@@ -1,6 +1,110 @@
+@import "src/theme/_projects-variables.scss";
+
 .blog-component {
-    height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     margin: 0 auto;
+}
+
+.blog-grid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 640px 640px;
+    gap: 30px;
+    height: 80%;
+    width: 85%;
+    margin-top: 3%;
+}
+
+.blog-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        padding: 15px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+
+    p {
+        font-size: 13px;
+        color: #b3b3b3;
+    }
+
+    span {
+        padding: 5px;
+        color: #f7b07d;
+        text-align: center;
+    }
+
+    .blog-img {
+        background: url('https://iacafe.com.br/wp-content/uploads/2023/06/harmonizacao-do-cafe-saiba-mais.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 260px;;
+        width: 100%;
+    };
+}
+
+.blog-card:nth-child(2) {
+    .blog-img {
+        background: url('https://iacafe.com.br/wp-content/uploads/2023/05/dicas-para-montar-o-seu-cantinho-do-cafe.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 260px;
+        width: 100%;
+    }
+}
+
+.blog-card:nth-child(3) {
+    .blog-img {
+        background: url('https://iacafe.com.br/wp-content/uploads/2023/06/harmonizacao-do-cafe-saiba-mais.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 260px;
+        width: 100%;
+    }
+}
+
+.blog-card:nth-child(4) {
+    .blog-img {
+        background: url('https://iacafe.com.br/wp-content/uploads/2023/03/leite-vaporizado-diferentes-maneiras-para-fazer-em-casa.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 260px;
+        width: 100%;
+    }
+}
+
+.blog-card:nth-child(5) {
+    .blog-img {
+        background: url('https://iacafe.com.br/wp-content/uploads/2023/02/ia-cafe-8xrgshlk9x9ogfp.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 260px;
+        width: 100%;
+    }
+}
+
+.blog-card:nth-child(6) {
+    .blog-img {
+        background: url('https://iacafe.com.br/wp-content/uploads/2023/02/ia-cafe-tf5kwjfi17ut5re.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 260px;
+        width: 100%;
+    }
 }
