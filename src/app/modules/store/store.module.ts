@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CoffesComponent } from './coffes/coffes.component';
 import { RoastedComponent } from './roasted/roasted.component';
 import { CapsulesComponent } from './capsules/capsules.component';
+import { PromoSlideComponent } from './promo-slide/promo-slide.component';
 
 
 
@@ -11,6 +12,7 @@ import { CapsulesComponent } from './capsules/capsules.component';
     CoffesComponent,
     RoastedComponent,
     CapsulesComponent,
+    PromoSlideComponent,
   ],
   imports: [
     CommonModule

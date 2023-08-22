@@ -1,3 +1,9 @@
+@import "/src/assets/styles/GeneralStyles.scss";
+
+.strong {
+    color: $Caramel;
+}
+
 .about-component {
     display: flex;
     flex-direction: column;
@@ -12,35 +18,30 @@ h1 {
 
 .hidden-left {
     opacity: 0;
-    filter: blur(1px);
     transform: translateX(-100%);
     transition: all 1s;
 }
 
 .hidden-right {
     opacity: 0;
-    filter: blur(1px);
     transform: translateX(100%);
     transition: all 1s;
 }
 
 .hidden-top {
     opacity: 0;
-    filter: blur(1px);
     transform: translateY(-100%);
     transition: all 1s;
 }
 
 .hidden-down {
     opacity: 0;
-    filter: blur(1px);
     transform: translateY(200%);
     transition: all 1s;
 }
 
 .on {
     opacity: 1;
-    filter: blur(0);
     transform: translateX(0);
     transform: translateY(0);
 }
@@ -67,7 +68,7 @@ h1 {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(rgb(45 45 47 / 52%), #272424), url('img/MorningCoffee.jpg');
+    background: #272424;
 
     .about-year-history-content {
         text-align: start;
@@ -103,11 +104,11 @@ strong {
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    background-image: linear-gradient(to bottom, rgb(45 45 47 / 52%), #272424), url('img/Glass.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll, local;
+    background: #302d2d;
 
     .about-region-box {
         height: 100%;
@@ -154,18 +155,46 @@ strong {
     height: 80vh;
     width: 100%;
     background: #272424;
+    display: flex;
+    justify-content: space-between;
 
-    p {
-        margin-left: 15%;
-        margin-top: 3%;
-        width: 40%;
-        height: 30%;
-        text-align: start;
+    .about-production-localizaction-history-text {
+        height: 100%;
+        width: 45%;
 
-        font-size: 29px;
-        font-weight: 800;
-        padding-top: 15px;
-        color: #ffa370;
+        p {
+            margin-left: 5%;
+            margin-top: 3%;
+            width: 100%;
+            height: 30%;
+            text-align: start;
+    
+            font-size: 29px;
+            font-weight: 800;
+            padding-top: 15px;
+            color: #6c6a6b;;
+        }
+    }
+
+    .about-production-localization-img {
+        height: 90%;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 320px;
+            width: 655px;
+            transition: 600ms;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transition: 600ms;
+            transform: scale(120%);
+        }
+        
     }
 }
 
@@ -177,9 +206,9 @@ strong {
     .about-pure-image {
         height: 100%;
         width: 50%;
-        background-image: linear-gradient(to bottom, rgb(45 45 47 / 52%), #272424), url('img/Pure.jpg');
         background-position: center;
         background-size: cover;
+        background: #cc8a5a;
     }
 
     .about-pure-content {
@@ -224,25 +253,17 @@ strong {
 
     button {
         margin: 0% 30% 0 0;
-        border: none;
-        background: #cc8a5a;
-        padding: 10px 25px 10px 25px;
-        border-radius: 25px;
-        width: 140px;
-        height: 45px;
-        font-size: 1.5rem;
-        color: #fff;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        font-weight: 500;
         cursor: pointer;
-        font-weight: 800;
+
+        padding: 5px 5px;
+        background: #cc8a5a;
+        border: 0px solid transparent;
+        border-radius: 50px;
+        color: #Fff;
+        font-weight: 700;
     }
     button:hover {
         transition: all 0.3s;
-        background: #ffa370;
-        color: #Fff;
+        background: #a0948d;
     }
 }

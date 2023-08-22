@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { faGear } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cookies',
@@ -7,8 +8,7 @@ import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 })
 export class CookiesComponent implements OnInit, AfterViewInit {
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   constructor(){}
 
@@ -48,5 +48,5 @@ export class CookiesComponent implements OnInit, AfterViewInit {
     document.querySelector('#cookie')?.classList.add('show-cookies')!;
   }
 
-
+  gearIcon = faGear
 }

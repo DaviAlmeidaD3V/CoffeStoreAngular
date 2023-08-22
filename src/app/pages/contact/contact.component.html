@@ -1,10 +1,15 @@
 <div class="contact-component">
-    <h3>Need talk with us</h3>
 
     <div class="contact-box">
 
+
         <div class="info-user">
-            <input type="text" placeholder="name">
+            <h3>Contact Us</h3>
+
+            <div class="contact-name-box">
+                <input type="text" placeholder="first name">
+                <input type="text" placeholder="last name">
+            </div>
 
             <div class="phone-email">
                 <input type="text" placeholder="email">
@@ -13,39 +18,50 @@
             </div>
     
             <div class="message-box">
-                <textarea  placeholder="Sua mensagem*"></textarea>
+                <textarea  placeholder="message"></textarea>
             
-                <button>Send your message </button>
             </div>
+
+            <button>
+                Send message
+            </button>
+
+        </div>
+    
+        <div class="contact-info">
+
+        <div class="box-info">
+            <fa-icon [icon]="phoneIcon"></fa-icon>
+            <h3>Phone Number</h3>
+            <h5>55 0 0000-0000</h5>
+        </div>
+
+        <div class="box-info">
+            <fa-icon [icon]="whatsAppIcon"></fa-icon>
+            <h3>Whatsapp</h3>
+            <h5>55 0 0000-0000</h5>
+        </div>
+
+        <div class="box-info">
+            <fa-icon [icon]="openingIcon"></fa-icon>
+            <h3>Opening hours</h3>
+            <h5>Mon. a Fri: 09h - 18h</h5>
+        </div>
+
+        <div class="box-info">
+            <fa-icon [icon]="envelopeIcon"></fa-icon>
+            <h3>email</h3>
+            <h5>sac@CoffeStore.com.br</h5>
+        </div>
+
+        <div class="box-info">
+            <fa-icon [icon]="addressIcon"></fa-icon>
+            <h3>address</h3>
+            <h5>Wall Street 1000</h5>
         </div>
         
-
-        <div class="contact-info">
-            <div class="box-info">
-                <fa-icon [icon]="phoneIcon"></fa-icon>
-                <h3>Phone Number</h3>
-                <h5>55 0 0000-0000</h5>
-            </div>
-
-            <div class="box-info">
-                <fa-icon [icon]="whatsAppIcon"></fa-icon>
-                <h3>Whatsapp</h3>
-                <h5>55 0 0000-0000</h5>
-            </div>
-
-            <div class="box-info">
-                <fa-icon [icon]="openingIcon"></fa-icon>
-                <h3>Opening hours</h3>
-                <h5>55 0 0000-0000</h5>
-            </div>
-
-            <div class="box-info">
-                <fa-icon [icon]="envelopeIcon"></fa-icon>
-                <h3>email</h3>
-                <h5>sac@CoffeStore.com.br</h5>
-            </div>
-            
         </div>
-    </div>
+
+</div>
 
 </div>

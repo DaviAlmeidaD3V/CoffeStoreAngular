@@ -1,10 +1,8 @@
-import { Component, OnInit, } from '@angular/core';
-import { faAngleUp, faCartShopping, faClose, faCoffee, faCookie, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { Component, Host, OnInit, } from '@angular/core';
+import { faAngleUp, faCartShopping, faClose, faCoffee, faCookie, faLaptop, faMoon, faSearch, faSun } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faHeart, faUser} from '@fortawesome/free-solid-svg-icons';
 import * as $ from 'jquery';
-
-import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -75,27 +73,22 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  @HostListener('window:scroll', ['$event'])
-  onScroll() {
-  document.querySelector('.header-container')?.classList.toggle('on', window.scrollY > 0);
-  document.querySelector('.header-to-top')?.classList.toggle('on', window.scrollY > 0);
-
-}
-
-
 ngAfterViewInit(){}
 
   ngOnInit() {
-    $('#menu-bar-info-on').hover(function(){
-    $('#menu-bar-info-drop').toggleClass('dropdown-open');
-    })
-    $('.dropdown-content').hover(function () {
-      $('#menu-bar-info-drop').toggleClass('dropdown-open');
-    })
+
 
     document.querySelector('.cookie-box')?.addEventListener('click', () => {
       document.querySelector('.cookie-component')?.classList.add('show-cookies');
     })
+
+    window.addEventListener('scroll', () => {
+      document.querySelector('.header-container')?.classList.toggle('on', window.scrollY > 0);
+      document.querySelector('.header-to-top')?.classList.toggle('on', window.scrollY > 0);
+    })
+
+    document.querySelector('.header-theme')?.addEventListener('click', () => {document.querySelector('.header-box-themes')?.classList.toggle('on')})
+    
   }
 
   userIcon = faUser
@@ -109,5 +102,8 @@ ngAfterViewInit(){}
   topIcon = faAngleUp
   closeIcon =  faClose
   cookieIcon = faCookie
+  moonIcon = faMoon
+  sunIcon = faSun
+  systemIcon = faLaptop
   
 }

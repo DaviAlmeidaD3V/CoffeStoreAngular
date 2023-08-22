@@ -321,13 +321,13 @@
 
 .comeback-button {
     cursor: pointer;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background: #cc8a5a;
-    color: #Fff;
-    font-weight: 300;
     margin: 30px 0;
+    padding: 5px 5px;
+    background: #cc8a5a;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    color: #Fff;
+    font-weight: 700;
 
     :hover {
         transition: 200ms;
@@ -363,12 +363,12 @@
     }
 
     button {
-        height: 20px;
+        padding: 5px 5px;
+        font-weight: 700;
         border: none;
         background: #cc8a5a;
         border-radius: 15px;
         color: #Fff;
-        width: 95%;
     }
 
     .remember-box {
@@ -414,7 +414,6 @@
         background: #cc8a5a;
         border: 0px solid transparent;
         border-radius: 50px;
-        width: 40%;
         color: #Fff;
         font-weight: 700;
     }
@@ -477,13 +476,12 @@
 .header-to-top.on {
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 60px;
     height: 35px;
     width: 35px;
     background: #636160;
     opacity: 1;
-    z-index: 1;
-    transition: 600ms ease;
+    transition: 800ms ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -517,4 +515,59 @@
 
 .cookie-box:hover {
     opacity: 1;
+}
+
+.header-theme {
+    margin-left: 45%;
+    cursor: pointer;
+    padding: 0px 13px;
+
+    i {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    i:hover {
+        color: #b96325;
+        transition: all 400ms ease;
+    }
+
+    .header-box-themes {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        padding: 16px 12px;
+        background: #eee;
+        border-radius: 15px;
+        height: 130px;
+        width: 80px;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        margin-top: 15%;
+        transition: 600ms;
+        z-index: -3;
+        gap: 1rem;
+
+        li {
+            padding: 3px 45px;
+            border-radius: 15px;
+        }
+    }
+    .header-box-themes.on {
+        position: absolute;
+        display: flex;
+        transition: 400ms;
+        margin-top: 0.5%;
+        opacity: 1;
+        height: 130px;
+        width: 80px;
+        z-index: 1;
+        background: #302d2d;
+    }
+
+    #header-open-theme {
+        padding: 0px 13px;
+        border-radius: 5px;
+    }
 }

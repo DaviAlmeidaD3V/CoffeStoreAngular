@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import {  faClock, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import {  faClock, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contact',
@@ -17,5 +17,6 @@ export class ContactComponent implements OnInit{
   whatsAppIcon = faWhatsapp
   openingIcon = faClock
   envelopeIcon = faEnvelope
+  addressIcon = faLocationDot
 
 }

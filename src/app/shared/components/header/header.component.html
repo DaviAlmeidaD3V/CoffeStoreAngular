@@ -5,9 +5,7 @@
             <i><fa-icon [icon]="instagramIcon"></fa-icon></i>
             <i><fa-icon [icon]="twitterIcon"></fa-icon></i>
         </div>
-
-
-
+        
         <div class="header-cart-bar">
             <i><fa-icon id="cart" (click)="ShowCart()" [icon]="cartIcon"></fa-icon></i>
             <i><fa-icon id="user" (click)="ShowUser()" [icon]="userIcon"></fa-icon></i>
@@ -30,26 +28,31 @@
 
 
                     <li>
-                        <a [routerLink]="['/store']" id="menu-bar-info-on" class="active-drop" class="menu-bar-links" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact: true}">Coffee</a>
-    
-                        <div class="dropdown" id="menu-bar-info-drop">
-                            <div class="dropdown-content">
-                                <a [routerLink]="['/store/coffes']">Ground Roasted Coffee</a>
-                                <a [routerLink]="['/store/category/capsules']">Capsules</a>
-                                <a [routerLink]="['/store/category/roasted']">Roasted</a>
-                            </div>
-                        </div>
-    
+                        <a [routerLink]="['/store']" id="Menu" class="active-drop" class="menu-bar-links" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact: true}">Coffee</a>
+        
                     </li>
     
                     <li><a [routerLink]="['/about']"id="Menu" class="menu-bar-links" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact: true}">About</a></li>
                     <li><a  id="Menu" [routerLink]="['/contact']"id="Menu"  class="menu-bar-links"[routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact: true}">Contact</a></li>
                     <li><a  id="Menu" [routerLink]="['/blog']"id="Menu"  class="menu-bar-links" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact: true}">Blog</a></li>
 
+                    <div class="header-theme">
+                        <i id="header-open-theme"><fa-icon [icon]="sunIcon"></fa-icon></i>
+
+                        <div class="header-box-themes">
+                            
+                                <li><i><fa-icon [icon]="sunIcon"></fa-icon></i></li>
+                                <li><i><fa-icon [icon]="moonIcon"></fa-icon></i></li>
+                                <li><i><fa-icon [icon]="systemIcon"></fa-icon></i></li>
+
+                        </div>
+
+                    </div>
 
                 </ul>
+
             </div>
-    
+
             <div class="header-search">
 
                 <input type="text" name="" placeholder="Search" id="SearchBar">
